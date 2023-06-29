@@ -1,0 +1,37 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #131212;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+*{
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+}
+.swiper-button-prev,
+.swiper-button-next{
+  color: #470050;
+  font-size: 15px;
+}
+.swiper-button-next{
+  transform: translate(-30px,-30px);
+}
+.swiper-button-prev{
+  transform: translate(30px,-30px);
+}
+@media(max-width: 900px){
+  .swiper-button-next,
+  .swiper-button-prev{
+    display: none;
+  }
+}
