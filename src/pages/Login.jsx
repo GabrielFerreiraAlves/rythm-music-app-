@@ -2,7 +2,7 @@ import {BsSpotify} from 'react-icons/bs'
 
 const Login = () => {
     const clientId = '3335d724447c40ae8e6ccb9bcba70921' 
-    const redirectUrl = 'http://localhost:5173/home'
+    const redirectUrl = 'https://rythmmusic.netlify.app/home'
     const spotifyUrl = 'https://accounts.spotify.com/authorize'
     const name = 'oi'
     const scope = [
