@@ -11,9 +11,13 @@ const Image = styled.img`
     object-fit: cover;
     display: block;
     margin: 0 auto !important;
+    @media(max-width: 500px){
+      width: 200px;
+    }
     @media(max-width: 300px){
         width: 95%;
     }
+
 `
 const AlbumName = styled.p`
   color: #fff !important;
