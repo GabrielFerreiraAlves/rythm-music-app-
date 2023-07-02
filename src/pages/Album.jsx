@@ -58,6 +58,9 @@ const MusicName = styled.p`
 `
 const TrackInfo = styled.p`
   color: #474747;
+  @media(max-width: 500px){
+    color: #a0a3a2;
+  }
 `
 const TrackContainer = styled.div`
   display: flex;
