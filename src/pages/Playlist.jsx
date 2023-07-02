@@ -55,11 +55,13 @@ const MusicName = styled.p`
   @media(max-width: 500px){
     white-space: nowrap;
     width: 100%;
-    color: #a0a3a2;
   }
 `
 const TrackInfo = styled.p`
   color: #474747;
+  @media(max-width: 500px){
+    color: #a0a3a2;
+  }
 `
 const TrackContainer = styled.div`
   display: flex;
