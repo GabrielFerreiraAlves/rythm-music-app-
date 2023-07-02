@@ -81,7 +81,7 @@ const ArtistAlbums = ({id}) => {
       }
 
   return (
-    <div style={{width: '40%'}}>
+    <Div>
         <Swiper modules={[Navigation]} navigation={true} slidesPerView='1' breakpoints={breakpoints}>
             {albums && albums.map(el => (
                 <SwiperSlide>
@@ -90,7 +90,7 @@ const ArtistAlbums = ({id}) => {
                 </SwiperSlide>
             ))}
         </Swiper>
-    </div>
+    </Div>
   )
 }
 
