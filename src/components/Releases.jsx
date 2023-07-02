@@ -29,6 +29,9 @@ const AlbumName = styled.p`
 const ArtistName = styled.p`
     color: #474747;
     text-align: center;
+    @media(max-width: 500px){
+      color: #d7dbda;
+    }
 `
 const Title = styled.h1`
     color: #fff;
