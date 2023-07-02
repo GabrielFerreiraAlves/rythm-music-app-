@@ -15,7 +15,7 @@ const Image = styled.img`
     object-fit: cover;
     display: block;
     margin: 0 auto !important;
-    @media(max-width: 500px){
+    @media(max-width: 700px){
       width: 150px;
       height: 150px;
   }
