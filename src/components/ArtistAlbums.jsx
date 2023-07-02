@@ -33,6 +33,7 @@ const Div = styled.div`
     width: 40%;
     @media(max-width: 500px){
         width: 100%;
+        margin-top: 15px !important;
     }
 `
 
