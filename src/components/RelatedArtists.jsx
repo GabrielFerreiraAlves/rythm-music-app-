@@ -57,7 +57,7 @@ const RelatedArtists = ({id}) => {
             slidesPerView: 2.2
         },
         400: {
-            slidesPerView: 1.9
+            slidesPerView: 2.5
         },
         550: {
           slidesPerView: 2.6
