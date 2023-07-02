@@ -81,6 +81,7 @@ const Releases = () => {
           slidesPerView: 4
         }
       }
+      
   return (
     <div>
     <Title>Novos singles</Title>

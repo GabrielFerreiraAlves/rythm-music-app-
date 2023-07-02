@@ -29,6 +29,12 @@ const AlbumContainer = styled.div`
         margin-top: 25px !important;
     }
 `
+const Div = styled.div`
+    width: 40%;
+    @media(max-width: 500px){
+        width: 200px;
+    }
+`
 
 const ArtistAlbums = ({id}) => {
     const [albums,setAlbums] = useState([])
@@ -50,9 +56,33 @@ const ArtistAlbums = ({id}) => {
         })
     },[id])
 
+    const breakpoints = {
+        100: {
+          slidesPerView: 1
+        },
+        350: {
+            slidesPerView: 1.6
+        },
+        400: {
+            slidesPerView: 1.3
+        },
+        500: {
+          slidesPerView: 1
+        },
+        700: {
+          slidesPerView: 1
+        },
+        900: {
+          slidesPerView: 1
+        },
+        1100: {
+          slidesPerView: 1
+        }
+      }
+
   return (
     <div style={{width: '40%'}}>
-        <Swiper modules={[Navigation]} navigation={true} slidesPerView='1'>
+        <Swiper modules={[Navigation]} navigation={true} slidesPerView='1' breakpoints={breakpoints}>
             {albums && albums.map(el => (
                 <SwiperSlide>
                     <Image src={el.images[0].url}/>
