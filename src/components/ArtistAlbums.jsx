@@ -86,8 +86,10 @@ const ArtistAlbums = ({id}) => {
         <Swiper modules={[Navigation]} navigation={true} slidesPerView='1' breakpoints={breakpoints}>
             {albums && albums.map(el => (
                 <SwiperSlide>
-                    <Image src={el.images[0].url}/>
-                    <AlbumName>{el.name}</AlbumName>
+                    <Link to={`/album/${el.id}`}>
+                        <Image src={el.images[0].url}/>
+                        <AlbumName>{el.name}</AlbumName>
+                    </Link>
                 </SwiperSlide>
             ))}
         </Swiper>
