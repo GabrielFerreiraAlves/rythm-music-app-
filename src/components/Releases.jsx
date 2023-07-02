@@ -25,6 +25,9 @@ const AlbumName = styled.p`
   font-weight: 500;
   font-size: 17px;
   text-align: center
+  @media(max-width: 500px){
+    width: 200px;
+  }
 `
 const ArtistName = styled.p`
     color: #474747;
