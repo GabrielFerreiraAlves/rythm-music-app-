@@ -14,7 +14,7 @@ const Image = styled.img`
     object-fit: cover;
     display: block;
     margin: 0 auto !important;
-    @media(max-width: 500px){
+    @media(max-width: 700px){
         width: 150px;
         height: 150px;
     }
@@ -92,10 +92,10 @@ const Recommendations = () => {
             slidesPerView: 2.2
         },
         400: {
-            slidesPerView: 1.9
+            slidesPerView: 2.5
         },
-        550: {
-          slidesPerView: 2.6
+        500: {
+          slidesPerView: 2.8
         },
         700: {
           slidesPerView: 3.4
