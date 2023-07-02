@@ -15,6 +15,10 @@ const Image = styled.img`
     object-fit: cover;
     display: block;
     margin: 0 auto !important;
+    @media(max-width: 500px){
+      width: 150px;
+      height: 150px;
+  }
 `
 const Title = styled.h1`
     color: #fff;
@@ -50,7 +54,7 @@ const RelatedArtists = ({id}) => {
           slidesPerView: 1.3
         },
         350: {
-            slidesPerView: 1.7
+            slidesPerView: 2.2
         },
         400: {
             slidesPerView: 1.9
