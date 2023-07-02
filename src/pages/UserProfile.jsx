@@ -15,7 +15,7 @@ const UserContainer = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  @media(max-width: 500px){
+  @media(max-width: 700px){
     display: block;
   }
 `
