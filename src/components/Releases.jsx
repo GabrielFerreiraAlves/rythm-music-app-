@@ -60,7 +60,7 @@ const Releases = () => {
           slidesPerView: 1
         },
         350: {
-            slidesPerView: 1.2
+            slidesPerView: 1.6
         },
         400: {
             slidesPerView: 1.3
