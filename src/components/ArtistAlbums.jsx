@@ -21,7 +21,7 @@ const Image = styled.img`
     display: block;
     margin: 0 auto !important;
     @media(max-width: 500px){
-        width: 90%;
+        width: 200px;
     }
 `
 const AlbumContainer = styled.div`
@@ -32,7 +32,7 @@ const AlbumContainer = styled.div`
 const Div = styled.div`
     width: 40%;
     @media(max-width: 500px){
-        width: 200px;
+        width: 100%;
     }
 `
 
