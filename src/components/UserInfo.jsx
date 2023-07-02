@@ -23,12 +23,14 @@ const DivContainer = styled.div`
       margin-top: 15px !important;
       h4{
         font-size: 20px;
+        color: #a0a3a2;
       }
       h1{
         font-size: 28px;
       }
       h3{
         font-size: 22px;
+        color: #a0a3a2;
       }
       
     }
