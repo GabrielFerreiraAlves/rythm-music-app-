@@ -52,7 +52,10 @@ const FeaturedPlaylists = () => {
       400: {
         slidesPerView: 1.3
       },
-      550: {
+      500: {
+        slidesPerView: 1.6
+      },
+      580: {
         slidesPerView: 2
       },
       700: {
