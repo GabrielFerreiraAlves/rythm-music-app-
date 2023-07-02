@@ -21,7 +21,7 @@ const Image = styled.img`
     display: block;
     margin: 0 auto !important;
     @media(max-width: 500px){
-        width: 100%;
+        width: 90%;
     }
     @media(max-width: 400px){
         width: 200px;
