@@ -20,6 +20,9 @@ const Image = styled.img`
     object-fit: cover;
     display: block;
     margin: 0 auto !important;
+    @media(max-width: 500px){
+        width: 100%;
+    }
     @media(max-width: 400px){
         width: 200px;
     }
