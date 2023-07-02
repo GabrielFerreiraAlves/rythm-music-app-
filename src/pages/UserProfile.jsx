@@ -43,7 +43,7 @@ const Button = styled(Link)`
 const SaveUserItems = styled.div`
   width: 50%;
 
-  @media(max-width: 500px){
+  @media(max-width: 700px){
     width: 100%;
   }
 `
