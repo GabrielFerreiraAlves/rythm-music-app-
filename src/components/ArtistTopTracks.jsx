@@ -27,6 +27,7 @@ const MusicName = styled.p`
   @media(max-width: 500px){
     width: 100%;
     white-space: nowrap;
+    color: #a0a3a2;
   }
 `
 const TrackInfo = styled.p`
