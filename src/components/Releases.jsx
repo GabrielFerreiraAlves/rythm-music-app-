@@ -30,7 +30,7 @@ const ArtistName = styled.p`
     color: #474747;
     text-align: center;
     @media(max-width: 500px){
-      color: #d7dbda;
+      color: #a0a3a2;
     }
 `
 const Title = styled.h1`
