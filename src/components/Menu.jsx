@@ -41,12 +41,13 @@ const StyledOffCanvas = styled(Offcanvas)`
   background-color: #2b2b2b;
 `
 const StyledBody = styled(Offcanvas.Body)`
+  margin-top: 15px !important;
   a{
     color: #fff;
     display: flex;
     align-items: center;
     padding: 10px 5px !important;
-    font-size: 18px;
+    font-size: 24px;
   }
 `
 
