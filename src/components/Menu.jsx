@@ -52,7 +52,7 @@ const Menu = () => {
         <AiOutlineMenu/>
       </StyledButton>
 
-      <StyledOffcanvas show={show} onHide={handleClose}>
+      <StyledOffCanvas show={show} onHide={handleClose}>
         <StyledHeader closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </StyledHeader>
@@ -61,7 +61,7 @@ const Menu = () => {
          <Nav.Link as={Link} to='/search'><FiSearch/> Buscar</Nav.Link>
          <Nav.Link as={Link} to='/user'><BsPersonCircle/> Minha conta</Nav.Link>
         </Offcanvas.Body>
-      </StyledOffcanvas>
+      </StyledOffCanvas>
     </>
   )
 }
