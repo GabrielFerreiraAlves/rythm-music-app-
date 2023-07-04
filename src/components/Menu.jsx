@@ -46,6 +46,7 @@ const StyledBody = styled(Offcanvas.Body)`
     color: #fff;
     display: flex;
     align-items: center;
+    gap: 5px;
     padding: 10px 5px !important;
     font-size: 24px;
   }
