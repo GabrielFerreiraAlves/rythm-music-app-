@@ -40,7 +40,11 @@ const StyledHeader = styled(Offcanvas.Header)`
 const StyledOffCanvas = styled(Offcanvas)`
   background-color: #2b2b2b;
 `
-
+const StyledBody = styled(Offcanvas.Body)`
+  a{
+    color: #fff;
+  }
+`
 
 const Menu = () => {
   const [show,setShow] = useState(false)
@@ -56,11 +60,11 @@ const Menu = () => {
         <StyledHeader closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </StyledHeader>
-        <Offcanvas.Body>
+        <StyledBody>
          <Nav.Link as={Link} to='/home'><AiFillHome/> Home</Nav.Link>
          <Nav.Link as={Link} to='/search'><FiSearch/> Buscar</Nav.Link>
          <Nav.Link as={Link} to='/user'><BsPersonCircle/> Minha conta</Nav.Link>
-        </Offcanvas.Body>
+        </StyledBody>
       </StyledOffCanvas>
     </>
   )
