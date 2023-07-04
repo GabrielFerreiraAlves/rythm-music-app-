@@ -174,25 +174,25 @@ const Search = () => {
           slidesPerView: 1
         },
         350: {
-            slidesPerView: 1.6
+            slidesPerView: 1.4
         },
         400: {
-            slidesPerView: 1.3
+            slidesPerView: 1.9
         },
         500: {
-          slidesPerView: 1.6
-        },
-        580: {
-          slidesPerView: 2
-        },
-        700: {
           slidesPerView: 2.4
         },
+        580: {
+          slidesPerView: 2.9
+        },
+        700: {
+          slidesPerView: 3.4
+        },
         900: {
-          slidesPerView: 2.8
+          slidesPerView: 4.5
         },
         1100: {
-          slidesPerView: 4
+          slidesPerView: 6
         }
       }
 
