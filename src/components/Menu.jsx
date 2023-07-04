@@ -43,6 +43,10 @@ const StyledOffCanvas = styled(Offcanvas)`
 const StyledBody = styled(Offcanvas.Body)`
   a{
     color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px !important;
+    font-size: 18px;
   }
 `
 
