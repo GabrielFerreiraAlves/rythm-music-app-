@@ -3,7 +3,9 @@ import Button from 'react-bootstrap/Button'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import { Nav } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineMenu,AiFillHome} from 'react-icons/ai'
+import {FiSearch} from 'react-icons/fi'
+import {BsPersonCircle} from 'react-icons/bs'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
@@ -52,9 +54,9 @@ const Menu = () => {
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </StyledHeader>
         <Offcanvas.Body>
-         <Nav.Link as={Link} to='/home'>Home</Nav.Link>
-         <Nav.Link as={Link} to='/search'>Buscar</Nav.Link>
-         <Nav.Link as={Link} to='/user'>Minha conta</Nav.Link>
+         <Nav.Link as={Link} to='/home'><AiFillHome/> Home</Nav.Link>
+         <Nav.Link as={Link} to='/search'><FiSearch/> Buscar</Nav.Link>
+         <Nav.Link as={Link} to='/user'><BsPersonCircle/> Minha conta</Nav.Link>
         </Offcanvas.Body>
       </Offcanvas>
     </>
