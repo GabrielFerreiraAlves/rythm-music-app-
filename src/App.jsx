@@ -10,6 +10,9 @@ const NavbarStyled = styled(Navbar)`
   background-color: #470050;
   height: 65px !important;
   justify-content: center;
+  @media(max-width: 500px){
+    padding: 0px 10px !important;
+  }
 `
 const LinkStyled = styled(Link)`
   color: #fff;
