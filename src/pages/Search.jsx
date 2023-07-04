@@ -59,6 +59,10 @@ const Image = styled.img`
     object-fit: cover;
     display: block;
     margin: 0 auto !important;
+    @media(max-width: 700px){
+      width: 150px;
+      height: 150px;
+    }
 `
 const PlaylistImage = styled.img`
     width: 200px;
@@ -167,22 +171,49 @@ const Search = () => {
 
       const breakpoints = {
         100: {
+          slidesPerView: 1
+        },
+        350: {
+            slidesPerView: 1.6
+        },
+        400: {
+            slidesPerView: 1.3
+        },
+        500: {
+          slidesPerView: 1.6
+        },
+        580: {
+          slidesPerView: 2
+        },
+        700: {
+          slidesPerView: 2.4
+        },
+        900: {
+          slidesPerView: 2.8
+        },
+        1100: {
+          slidesPerView: 4
+        }
+      }
+
+      const artistBreakpoints = {
+        100: {
           slidesPerView: 1.3
         },
         350: {
-            slidesPerView: 1.7
+            slidesPerView: 2.2
         },
         400: {
-            slidesPerView: 1.9
+            slidesPerView: 2.5
         },
-        550: {
-          slidesPerView: 2.6
+        500: {
+          slidesPerView: 2.8
         },
         700: {
           slidesPerView: 3.4
         },
         900: {
-          slidesPerView: 5.4
+          slidesPerView: 4.4
         },
         1100: {
           slidesPerView: 6
@@ -198,7 +229,7 @@ const Search = () => {
         </Form>
         
         <DivContainer>
-          <Swiper modules={[Navigation]} navigation={true} slidesPerView='6' breakpoints={breakpoints}>
+          <Swiper modules={[Navigation]} navigation={true} slidesPerView='6' breakpoints={artistBreakpoints}>
             {artists && artists.length > 0 && artists.map(el => (
               <SwiperSlide key={el.id}>
                 <Link to={`/artist/${el.id}`}>
@@ -212,7 +243,7 @@ const Search = () => {
         </DivContainer>
 
         <DivContainer>
-          <Swiper modules={[Navigation]} navigation={true} slidesPerView='6' breakpoints={breakpoints}>
+          <Swiper modules={[Navigation]} navigation={true} slidesPerView='4' breakpoints={breakpoints}>
             {playlist && playlist.length > 0 && playlist.map(el => (
               <SwiperSlide key={el.id}>
                 <Link to={`/playlist/${el.id}`}>
