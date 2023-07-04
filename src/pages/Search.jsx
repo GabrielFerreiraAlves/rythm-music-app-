@@ -174,7 +174,7 @@ const Search = () => {
           slidesPerView: 1
         },
         350: {
-            slidesPerView: 1.4
+            slidesPerView: 1.6
         },
         400: {
             slidesPerView: 1.9
