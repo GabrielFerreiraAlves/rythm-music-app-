@@ -31,11 +31,14 @@ const StyledHeader = styled(Offcanvas.Header)`
     box-shadow: none !important;
     outline: none !important;
     border: none;
-    font-size: 20px;
+    font-size: 23px;
   }
   button:hover,button:active,button:focus{
     background-color: transparent !important;
   }
+`
+const StyledOffCanvas = styled(Offcanvas)`
+  background-color: #2b2b2b;
 `
 
 
@@ -49,7 +52,7 @@ const Menu = () => {
         <AiOutlineMenu/>
       </StyledButton>
 
-      <Offcanvas show={show} onHide={handleClose}>
+      <StyledOffcanvas show={show} onHide={handleClose}>
         <StyledHeader closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </StyledHeader>
@@ -58,7 +61,7 @@ const Menu = () => {
          <Nav.Link as={Link} to='/search'><FiSearch/> Buscar</Nav.Link>
          <Nav.Link as={Link} to='/user'><BsPersonCircle/> Minha conta</Nav.Link>
         </Offcanvas.Body>
-      </Offcanvas>
+      </StyledOffcanvas>
     </>
   )
 }
