@@ -27,11 +27,11 @@ const StyledHeader = styled(Offcanvas.Header)`
   button{
     background-color: transparent;
     padding: 0 !important;
-    margin: 10px 0px 0px 0px !important;
+    margin: 5px 5px 0px 0px !important;
     box-shadow: none !important;
     outline: none !important;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
   }
   button:hover,button:active,button:focus{
     background-color: transparent !important;
