@@ -15,6 +15,7 @@ const StyledButton = styled(Button)`
   outline: none;
   border: none;
   font-size: 30px;
+  transform: translateY(-1px);
 
   &:hover,&:active,&:focus{
     background-color: transparent !important;
