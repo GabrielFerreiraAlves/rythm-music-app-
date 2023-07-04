@@ -17,6 +17,9 @@ const NavbarStyled = styled(Navbar)`
 const LinkStyled = styled(Link)`
   color: #fff;
   font-size: 20px;
+  &:hover{
+    color: #fff;
+  }
 `
 
 function App() {
