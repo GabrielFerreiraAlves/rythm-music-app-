@@ -4,9 +4,12 @@ import styled from 'styled-components'
 const Description = styled.h1`
   font-size: 30px;
   text-align: center;
+  color: #fff;
 `
 const Button = styled.button`
+  display: inline-block;
   background-color: #470050;
+  font-size: 18px;
   padding: 5px 20px !important;
   margin: 10px auto !important;
   border-radius: 30px;
