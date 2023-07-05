@@ -1,5 +1,4 @@
 import {useEffect,useState} from 'react'
-import Cookies from 'js-cookie'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -70,7 +69,7 @@ const ArtistTopTracks = ({id}) => {
     const [country,setCountry] = useState('')
     const [checkUserTrack,setCheckUserTrack] = useState([])
 
-    const token = Cookies.get('accessToken')
+    const token = localStorage.getItem('accessToken')
     const headers = {
       headers: {
         Authorization: `Bearer ${token}`

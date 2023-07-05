@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import {useEffect,useState} from 'react'
-import Cookies from 'js-cookie'
 import {BsPatchCheck} from 'react-icons/bs'
 
 const ImageArtist = styled.img`
@@ -36,7 +35,7 @@ const ArtistInfo = ({image,name,followers,id}) => {
     const [following,setFollowing] = useState(false)
     const [bool,setBool] = useState()
     
-    const token = Cookies.get('accessToken')
+    const token = localStorage.getItem('accessToken')
 
     useEffect(() => {
       const url = `https://api.spotify.com/v1/me/following/contains?type=artist&ids=${id}`
