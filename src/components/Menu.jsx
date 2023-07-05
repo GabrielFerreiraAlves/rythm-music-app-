@@ -24,9 +24,12 @@ const StyledButton = styled(Button)`
   }
 `
 const StyledHeader = styled(Offcanvas.Header)`
+  div{
+    color: #000000;
+  }
   button{
     background-color: transparent;
-    color: #470050;
+    color: #470050 !important;
     padding: 0 !important;
     margin: 5px 5px 0px 0px !important;
     box-shadow: none !important;
