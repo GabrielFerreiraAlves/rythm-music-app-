@@ -1,6 +1,5 @@
 import {useState,useEffect} from 'react'
 import {useParams} from 'react-router-dom'
-import Cookies from 'js-cookie'
 import styled from 'styled-components'
 import {BiTimeFive} from 'react-icons/bi'
 import FollowButtonPlaylist from '../components/FollowButtonPlaylist'
@@ -96,7 +95,7 @@ const Playlist = () => {
 
     const {id} = useParams()
 
-    const token = Cookies.get('accessToken')
+    const token = localStorage.getItem('accessToken')
     const headers = {
         headers: {
         Authorization: `Bearer ${token}`

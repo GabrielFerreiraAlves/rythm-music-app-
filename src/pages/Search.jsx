@@ -1,5 +1,4 @@
 import {useState} from 'react'
-import Cookies from 'js-cookie'
 import styled from 'styled-components'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Navigation } from 'swiper'
@@ -131,7 +130,7 @@ const Search = () => {
     const [artists,setArtists] = useState([])
     const [playlist,setPlaylist] = useState([])
     
-    const token = Cookies.get('accessToken')
+    const token = localStorage.getItem('accessToken')
     const headers = {
         headers:{
             Authorization: `Bearer ${token}`

@@ -1,5 +1,4 @@
 import {useState,useEffect} from 'react'
-import Cookies from 'js-cookie'
 import styled from 'styled-components'
 import UserInfo from '../components/UserInfo'
 import CardUserTopArtist from '../components/CardUserTopArtist'
@@ -51,7 +50,8 @@ const SaveUserItems = styled.div`
 const UserProfile = () => {
     const [userData,setUserData] = useState([])
     const [topArtistsUser,setTopArtistsUser] = useState([])
-    const token = Cookies.get('accessToken')
+
+    const token = localStorage.getItem('accessToken')
     const headers = {
       headers: {
         Authorization: `Bearer ${token}`

@@ -1,5 +1,4 @@
 import {useState,useEffect} from 'react'
-import Cookies from 'js-cookie'
 import {useParams} from 'react-router-dom'
 import ArtistInfo from '../components/ArtistInfo'
 import ArtistTopTracks from '../components/ArtistTopTracks'
@@ -24,7 +23,7 @@ const Artist = () => {
     const [followers,setFollowers] = useState("")
     const [imageArtist,setImageArtist] = useState("")
 
-    const token = Cookies.get('accessToken')
+    const token = localStorage.getItem('accessToken')
     const headers = {
         headers:{
             Authorization: `Bearer ${token}`

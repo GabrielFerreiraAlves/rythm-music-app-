@@ -1,5 +1,4 @@
 import {useState,useEffect} from 'react'
-import Cookies from 'js-cookie'
 import {AiFillHeart,AiOutlineHeart} from 'react-icons/ai'
 import styled from 'styled-components'
 
@@ -25,7 +24,7 @@ const FollowButtonPlaylist = ({id}) => {
     const [userId,setUserId] = useState("")
     const [isFollowing,setIsFollowing] = useState(false)
 
-    const token = Cookies.get('accessToken')
+    const token = localStorage.getItem('accessToken')
     const headers = {
         headers: {
         Authorization: `Bearer ${token}`

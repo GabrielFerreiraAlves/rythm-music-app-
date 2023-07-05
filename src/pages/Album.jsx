@@ -1,6 +1,5 @@
 import {useState,useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import Cookies from 'js-cookie'
 import {useParams} from 'react-router-dom'
 import styled from 'styled-components'
 import {BiTimeFive} from 'react-icons/bi'
@@ -95,7 +94,7 @@ const Album = () => {
     const [album,setAlbum] = useState([])
     const [artist,setArtist] = useState('')
 
-    const token = Cookies.get('accessToken')
+    const token = localStorage.getItem('accessToken')
     const headers = {
         headers:{
             Authorization: `Bearer ${token}`
