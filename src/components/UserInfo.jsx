@@ -4,6 +4,12 @@ import styled from 'styled-components'
 const DivContainer = styled.div`
     margin-top: 40px !important;
     text-align: center;
+    img{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
     h1{
         color: #fff;
         font-size: 40px;
