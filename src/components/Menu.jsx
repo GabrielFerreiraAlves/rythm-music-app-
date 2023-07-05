@@ -27,7 +27,7 @@ const StyledHeader = styled(Offcanvas.Header)`
   div{
     color: #000000;
     margin-left: 5px !important;
-    font-size: 18px;
+    font-size: 23px;
   }
   button{
     background-color: transparent;
@@ -36,7 +36,7 @@ const StyledHeader = styled(Offcanvas.Header)`
     box-shadow: none !important;
     outline: none !important;
     border: none;
-    font-size: 18px;
+    font-size: 23px;
   }
   button:hover,button:active,button:focus{
     background-color: transparent !important;
