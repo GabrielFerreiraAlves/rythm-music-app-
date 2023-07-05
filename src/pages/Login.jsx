@@ -4,7 +4,6 @@ import styled from 'styled-components'
 const Div = styled.div`
   height: 80vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #2b2b2b;
 `
@@ -49,8 +48,10 @@ const Login = () => {
 
   return (
     <Div>
-      <Description>Descubra novos artistas e músicas para animar seu dia</Description>
-      <Button onClick={handleClick}>Entrar com Spotify <BsSpotify/></Button>
+      <div>
+        <Description>Descubra novos artistas e músicas para animar seu dia</Description>
+        <Button onClick={handleClick}>Entrar com Spotify <BsSpotify/></Button>
+      </div>
     </Div>
   )
 }
