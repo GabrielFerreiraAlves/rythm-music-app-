@@ -1,5 +1,4 @@
 import {useEffect,useState} from 'react'
-import Cookies from 'js-cookie'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Navigation } from 'swiper'
 import 'swiper/css'
@@ -27,7 +26,7 @@ const Title = styled.h1`
 
 const FeaturedPlaylists = () => {
     const [playlists,setPlaylists] = useState([])
-    // const token = Cookies.get('accessToken')
+
     const token = localStorage.getItem('accessToken')
     const headers = {
       headers:{

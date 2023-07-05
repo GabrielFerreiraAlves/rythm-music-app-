@@ -1,5 +1,4 @@
 import {useEffect,useState} from 'react'
-import Cookies from 'js-cookie'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Navigation } from 'swiper'
 import 'swiper/css'
@@ -41,7 +40,7 @@ const Title = styled.h1`
 
 const Releases = () => {
     const [releaseSingle,setReleaseSingle] = useState([])
-    // const token = Cookies.get('accessToken')
+    
     const token = localStorage.getItem('accessToken')
     console.log(token)
     const headers = {

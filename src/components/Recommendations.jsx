@@ -1,6 +1,5 @@
 import {useState,useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import Cookies from 'js-cookie'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Navigation } from 'swiper'
 import 'swiper/css'
@@ -36,7 +35,6 @@ const Recommendations = () => {
     const [arrReduce,setArrReduce] = useState([]) //get the reduce array id of theartist Id
     const [recommended,setRecommended] = useState([])
 
-    // const token = Cookies.get('accessToken')
     const token = localStorage.getItem('accessToken')
     const headers = {
         headers:{
