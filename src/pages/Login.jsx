@@ -12,6 +12,9 @@ const Description = styled.h1`
   font-size: 30px;
   text-align: center;
   color: #fff;
+  @media(max-width: 450px){
+    font-size: 24px;
+  }
 `
 const Button = styled.button`
   display: block;
