@@ -1,5 +1,4 @@
 import {useState,useEffect} from 'react'
-import Cookies from 'js-cookie'
 import Releases from '../components/Releases'
 import FeaturedPlaylists from '../components/FeaturedPlaylists'
 import Recommendations from '../components/Recommendations'
@@ -14,7 +13,6 @@ const Home = () => {
   useEffect( () => {
     if(hash){
       setToken(hash.substring(1).split('&')[0].split('=')[1])
-      Cookies.set('accessToken', token, { secure: true, sameSite: 'strict', expires: 2/24 })
       localStorage.setItem('accessToken',token)
     }
   })
