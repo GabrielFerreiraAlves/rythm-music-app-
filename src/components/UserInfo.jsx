@@ -43,6 +43,7 @@ const DivContainer = styled.div`
 `
 
 const UserInfo = ({name,email,country,followers,accountType,image}) => {
+  console.log(image)
   return (
     <DivContainer>
           {image && image[0] && image[0].url && <img src={image[0].url} alt="" />}
