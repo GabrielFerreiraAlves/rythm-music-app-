@@ -7,7 +7,7 @@ const Description = styled.h1`
   color: #fff;
 `
 const Button = styled.button`
-  display: inline-block;
+  display: block;
   background-color: #470050;
   font-size: 18px;
   padding: 5px 20px !important;
