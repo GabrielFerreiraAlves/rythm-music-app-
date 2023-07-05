@@ -5,7 +5,7 @@ const Div = styled.div`
   height: 80vh;
   display: flex;
   align-items: center;
-  background-color: #2b2b2b;
+  justify-content: center;
 `
 
 const Description = styled.h1`
