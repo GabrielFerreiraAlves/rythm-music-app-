@@ -1,6 +1,12 @@
 import {BsSpotify} from 'react-icons/bs'
 import styled from 'styled-components'
 
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 const Description = styled.h1`
   font-size: 30px;
   text-align: center;
@@ -40,10 +46,10 @@ const Login = () => {
     }
 
   return (
-    <div>
+    <Div>
       <Description>Descubra novos artistas e músicas para animar seu dia</Description>
       <Button onClick={handleClick}>Entrar com Spotify <BsSpotify/></Button>
-    </div>
+    </Div>
   )
 }
 
