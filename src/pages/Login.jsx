@@ -2,6 +2,7 @@ import {BsSpotify} from 'react-icons/bs'
 import styled from 'styled-components'
 
 const Div = styled.div`
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
