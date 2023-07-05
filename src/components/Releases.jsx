@@ -43,6 +43,7 @@ const Releases = () => {
     const [releaseSingle,setReleaseSingle] = useState([])
     // const token = Cookies.get('accessToken')
     const token = localStorage.getItem('accessToken')
+    console.log(token)
     const headers = {
       headers:{
           Authorization: `Bearer ${token}`
