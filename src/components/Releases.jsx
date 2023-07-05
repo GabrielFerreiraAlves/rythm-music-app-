@@ -41,7 +41,8 @@ const Title = styled.h1`
 
 const Releases = () => {
     const [releaseSingle,setReleaseSingle] = useState([])
-    const token = Cookies.get('accessToken')
+    // const token = Cookies.get('accessToken')
+    const token = localStorage.getItem('accessToken')
     const headers = {
       headers:{
           Authorization: `Bearer ${token}`

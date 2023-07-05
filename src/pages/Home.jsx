@@ -15,6 +15,7 @@ const Home = () => {
     if(hash){
       setToken(hash.substring(1).split('&')[0].split('=')[1])
       Cookies.set('accessToken', token, { secure: true, sameSite: 'strict', expires: 2/24 })
+      localStorage.setItem('accessToken',token)
     }
   })
   
