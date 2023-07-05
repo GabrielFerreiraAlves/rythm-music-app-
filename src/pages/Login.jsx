@@ -5,6 +5,7 @@ const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #2b2b2b;
 `
 
 const Description = styled.h1`
