@@ -46,7 +46,7 @@ const UserInfo = ({name,email,country,followers,accountType,image}) => {
   console.log(image)
   return (
     <DivContainer>
-          {image && image[0] && image[0].url && <img src={image[0].url} alt="" />}
+          {image && image[1] && image[1].url && <img src={image[1].url} alt="" />}
           <div>
           <h1>{name}</h1>
           {followers && <h3>{followers.total} seguidores</h3>}
