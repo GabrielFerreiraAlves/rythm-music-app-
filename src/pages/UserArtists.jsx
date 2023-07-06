@@ -24,6 +24,16 @@ const Title = styled.h1`
   font-size: 26px;
   margin: 10px !important;
 `
+const ArtistEmpty = syled.div`
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+  }
+`
 
 const UserArtists = () => {
   const [artists,setArtists] = useState([])
@@ -47,10 +57,11 @@ const UserArtists = () => {
   return (
     <div>
       <Title>Meus Artistas</Title>
+      {artists.length === 0 && <ArtistEmpty><p>Você não segue nenhum artista</p></ArtistEmpty>}
       {artists && artists.map(el => (
         <Link to={`/artist/${el.id}`}>
           <ArtistContainer>
-            <img src={el.images[1].url} alt="" />
+            <img src={el.images[1].url} alt={'image of '+el.name} />
             <p>{el.name}</p>
           </ArtistContainer>
         </Link>
