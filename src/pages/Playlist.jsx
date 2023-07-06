@@ -88,6 +88,19 @@ const Circle = styled.div`
   background-color: #474747;
   border-radius: 50%;
 `
+const ContainerTrackInfos = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 !important;
+  @media(max-width: 500px){
+    p:nth-child(1){
+      max-width: 55vw;
+      white-space: nowrap;
+      overflow-x: hidden;
+    }
+  }
+`
 
 const Playlist = () => {
     const [playlistData,setPlaylistData] = useState([])
@@ -151,11 +164,11 @@ const Playlist = () => {
             <MusicImage src={el.track.album.images[2].url}/>
             <InfoContainer>
             <MusicName>{el.track.name}</MusicName>
-            <div style={{display: 'flex',alignItems: 'center','gap': '10px','padding': 0}}>
+            <ContainerTrackInfos>
                 <TrackInfo>{el.track.artists[0].name}</TrackInfo>
                 <Circle></Circle>
                 <TrackInfo>{convertMusicTime(el.track.duration_ms)}</TrackInfo>
-            </div>
+            </ContainerTrackInfos>
             </InfoContainer>
         </TrackContainer>
     ))}
