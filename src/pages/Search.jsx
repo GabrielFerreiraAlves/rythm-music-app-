@@ -82,6 +82,7 @@ const DivContainer = styled.div`
   }
 `
 const Input = styled.input`
+  margin-right: 10px !important;
   background-color: transparent;
   border-radius: 5px;
   border: 2px solid #470050;
