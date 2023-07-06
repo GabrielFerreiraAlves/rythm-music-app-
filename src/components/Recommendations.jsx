@@ -110,6 +110,7 @@ const Recommendations = () => {
   return (
     <div>
         <Title>Para Você</Title>
+        {recommended.length === 0 && <div>Escute mais para recomendarmos!</div>}
         <Swiper modules={[Navigation]} navigation={true} slidesPerView='6' breakpoints={breakpoints}>
         {recommended && recommended.map(el => (
             <SwiperSlide key={el.id}>
