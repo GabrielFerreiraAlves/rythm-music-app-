@@ -1,6 +1,7 @@
 import {useState,useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 const Title = styled.h1`
   color: #fff;
@@ -59,7 +60,7 @@ const UserPlaylists = () => {
   return (
     <div>
       <Title>Minhas Playlists</Title>
-      {playlists.length === 0 && <ArtistEmpty><p>Você não segue nenhum artista</p></ArtistEmpty>}
+      {playlists.length === 0 && <PlaylistEmpty><p>Você não segue nenhum artista</p></PlaylistEmpty>}
       {playlists && playlists.map(el => (
         <Link to={`/playlist/${el.id}`}>
           <PlaylistContainer>
