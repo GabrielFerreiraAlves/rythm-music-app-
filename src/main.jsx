@@ -10,6 +10,7 @@ import Search from './pages/Search'
 import Playlist from './pages/Playlist'
 import UserProfile from './pages/UserProfile'
 import UserArtists from './pages/UserArtists'
+import UserPlaylists from './pages/UserPlaylists'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path='/playlist/:id' element={<Playlist/>}/>
             <Route path='/user' element={<UserProfile/>}/>
             <Route path='/user/artists' element={<UserArtists/>}/>
+            <Route path='/user/:id/playlists' element={<UserPlaylists/>}/>
           </Route>
         </Routes>
     </BrowserRouter>
