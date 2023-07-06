@@ -28,6 +28,7 @@ const ArtistEmpty = styled.div`
   height: 70vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   p{
     color: #fff;
     font-weight: 500;
