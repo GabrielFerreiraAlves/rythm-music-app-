@@ -69,7 +69,7 @@ const ContainerTrackInfos = styled.div`
   gap: 10px;
   padding: 0 !important;
   @media(max-width: 500px){
-    p::nth-child(1){
+    p:nth-child(1){
       width: 70%;
       white-space: nowrap;
       overflow-x: hidden;
