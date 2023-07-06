@@ -7,14 +7,15 @@ const ArtistContainer = styled.div`
   align-items: center;
   gap: 10px;
   img{
-    width: 140px;
-    height: 140px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
     border-radius: 50%
   }
   p{
     color: #fff;
     font-size: 18px;
+    font-weight: 500;
   }
 `
 
