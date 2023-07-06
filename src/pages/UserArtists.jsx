@@ -1,5 +1,22 @@
 import {useEffect,useState} from 'react'
 import {Link} from 'react-router-dom'
+import styled from 'styled-components'
+
+const ArtistContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%
+  }
+  p{
+    color: #fff;
+    font-size: 18px;
+  }
+`
 
 const UserArtists = () => {
   const [artists,setArtists] = useState([])
