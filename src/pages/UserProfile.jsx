@@ -119,7 +119,7 @@ const UserProfile = () => {
           </Swiper>
           <div>
             <Button to='/user/artists'><span>Meus Artistas</span> <IoIosArrowForward/></Button>
-            <Button to={`/${userData.id}/playlists`}><span>Minhas Playlists</span> <IoIosArrowForward/></Button>
+            <Button to={`user/${userData.id}/playlists`}><span>Minhas Playlists</span> <IoIosArrowForward/></Button>
           </div>
       </SaveUserItems>  
     </UserContainer>
