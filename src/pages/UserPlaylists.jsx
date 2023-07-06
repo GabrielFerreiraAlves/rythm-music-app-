@@ -52,7 +52,6 @@ const UserPlaylists = () => {
         fetch(url,headers)
         .then(res => res.json())
         .then(data => {
-          console.log(data)
           setPlaylists(data.items)
         })
       },[])

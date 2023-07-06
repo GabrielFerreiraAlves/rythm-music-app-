@@ -28,6 +28,17 @@ const ArtistName = styled.p`
     font-weight: 500;
     text-align: center;
 `
+const RecommendedEmpty = styled.div`
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+  }
+`
 
 const Recommendations = () => {
     const [topArtist,setTopArtist] = useState([]) //get the top artists of a user
@@ -110,7 +121,7 @@ const Recommendations = () => {
   return (
     <div>
         <Title>Para Você</Title>
-        {recommended.length === 0 && <div>Escute mais para recomendarmos!</div>}
+        {recommended.length === 0 && <RecommendedEmpty><p>Escute mais para recomendarmos!</p></RecommendedEmpty>}
         <Swiper modules={[Navigation]} navigation={true} slidesPerView='6' breakpoints={breakpoints}>
         {recommended && recommended.map(el => (
             <SwiperSlide key={el.id}>
