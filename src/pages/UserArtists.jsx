@@ -6,7 +6,7 @@ const ArtistContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 10px !important;
+  margin: 10px 0px 0px 10px!important;
   img{
     width: 110px;
     height: 110px;
@@ -40,7 +40,6 @@ const UserArtists = () => {
     fetch(url,headers)
     .then(res => res.json())
     .then(data => {
-      console.log(data)
       setArtists(data.artists.items)
     })
   },[])
