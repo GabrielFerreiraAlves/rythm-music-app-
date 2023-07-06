@@ -46,6 +46,17 @@ const SaveUserItems = styled.div`
     width: 100%;
   }
 `
+const TopArtistUserEmpty = styled.div`
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+  }
+`
 
 const UserProfile = () => {
     const [userData,setUserData] = useState([])
@@ -110,6 +121,7 @@ const UserProfile = () => {
         }
       <SaveUserItems>
           <Title>Mais tocados</Title>
+          {topArtistsUser.length === 0 && <TopArtistUserEmpty><p>Escute para ter mais tocados!</p></TopArtistUserEmpty>}
           <Swiper modules={[Navigation]} navigation={true} slidesPerView='3.8' breakpoints={breakpoints}>
             {topArtistsUser && topArtistsUser.map(el => (
               <SwiperSlide key={el.id}>
