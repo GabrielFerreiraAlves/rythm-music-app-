@@ -6,6 +6,7 @@ const ArtistContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px !important;
   img{
     width: 110px;
     height: 110px;
@@ -17,6 +18,11 @@ const ArtistContainer = styled.div`
     font-size: 18px;
     font-weight: 500;
   }
+`
+const Title = styled.h1`
+  color: #fff;
+  font-size: 26px;
+  margin: 10px !important;
 `
 
 const UserArtists = () => {
@@ -41,6 +47,7 @@ const UserArtists = () => {
 // artists.name artists.id artists.images[1].url
   return (
     <div>
+      <Title>Meus Artistas</Title>
       {artists && artists.map(el => (
         <Link to={`/artist/${el.id}`}>
           <ArtistContainer>
