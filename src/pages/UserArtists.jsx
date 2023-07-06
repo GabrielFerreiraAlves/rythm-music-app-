@@ -42,8 +42,10 @@ const UserArtists = () => {
     <div>
       {artists && artists.map(el => (
         <Link to={`/artist/${el.id}`}>
-          <img src={el.images[1].url} alt="" />
-          <p>{el.name}</p>
+          <ArtistContainer>
+            <img src={el.images[1].url} alt="" />
+            <p>{el.name}</p>
+          </ArtistContainer>
         </Link>
       ))}
     </div>
