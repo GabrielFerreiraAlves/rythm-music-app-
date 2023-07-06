@@ -24,7 +24,7 @@ const Title = styled.h1`
   font-size: 26px;
   margin: 10px !important;
 `
-const ArtistEmpty = syled.div`
+const ArtistEmpty = styled.div`
   height: 70vh;
   display: flex;
   align-items: center;
