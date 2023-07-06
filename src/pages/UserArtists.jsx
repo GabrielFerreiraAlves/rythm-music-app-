@@ -7,8 +7,8 @@ const ArtistContainer = styled.div`
   align-items: center;
   gap: 10px;
   img{
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 50%
   }
