@@ -63,6 +63,19 @@ const Circle = styled.div`
   background-color: #474747;
   border-radius: 50%;
 `
+const ContainerTrackInfos = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 !important;
+  @media(max-width: 500px){
+    p::nth-child(1){
+      width: 70%;
+      white-space: nowrap;
+      overflow-x: hidden;
+    }
+  }
+`
 
 const ArtistTopTracks = ({id}) => {
     const [data,setData] = useState(null)
@@ -110,11 +123,11 @@ const ArtistTopTracks = ({id}) => {
               <MusicImage src={el.album.images[2].url} alt="" />
               <InfoContainer>
                 <MusicName>{el.name}</MusicName>
-                <div style={{display: 'flex',alignItems: 'center','gap': '10px','padding': 0}}>
+                <ContainerTrackInfos>
                   <TrackInfo>{el.album.name}</TrackInfo>
                   <Circle></Circle>
                   <TrackInfo>{convert(el.duration_ms)}</TrackInfo>
-                </div>
+                </ContainerTrackInfos>
               </InfoContainer>
           </TrackContainer>
         ))}
